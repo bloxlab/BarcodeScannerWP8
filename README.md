@@ -3,9 +3,9 @@ BarcodeScannerWP8
 
 Cordova/PhoneGap plugin to enable barcode scanning on Windows Phone 8 using the device's camera.
 
-The plugin uses the native library [ZXing.Net](http://zxingnet.codeplex.com/) to decode the barcodes.
+* The plugin uses the native library [ZXing.Net](http://zxingnet.codeplex.com/) to decode the barcodes.
 
-The look and feel of the barcode scanner view is consistent with the PhoneGap Build [Android/iOS barcode scanner plugin](https://github.com/phonegap-build/BarcodeScanner/tree/9270025f71891b2f46a38b7bc3d1223b4955dce2)
+* The look and feel of the barcode scanner view is consistent with the PhoneGap Build [Android/iOS barcode scanner plugin](https://github.com/phonegap-build/BarcodeScanner/tree/9270025f71891b2f46a38b7bc3d1223b4955dce2)
 
 Licence
 =======
@@ -15,8 +15,9 @@ Installation
 ============
 
 Using CLI:
-1. cordova plugin add org.bloxlab.barcodescanner
-2. cordova build wp8
+* cordova plugin add org.bloxlab.barcodescanner
+* cordova build wp8
+
 
 Usage
 =====
