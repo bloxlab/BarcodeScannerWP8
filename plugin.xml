@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="org.bloxlab.barcodescanner"
+    version="0.9.0">
+    <name>BarcodeScanner</name>
+    <description>Scans barcodes using the camera for WP8 devices.</description>
+    <author>Simon Chan</author>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <keywords>barcode scanner reader</keywords>
+
+    <js-module src="www/barcodescanner.js" name="BarcodeScanner">
+        <clobbers target="cordova.plugins.barcodeScanner"/>
+    </js-module>
+
+    <!-- Windows Phone 8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BarcodeScanner">
+                <param name="wp-package" value="BarcodeScanner"/>
+            </feature>
+        </config-file>
+
+        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+            <Capability Name="ID_CAP_ISV_CAMERA"/>
+        </config-file>
+
+        <source-file src="src/wp8/dependencies/zxing.wp8.0.dll"/>
+        <source-file src="src/wp8/BarcodeResultInfo.cs"/>
+        <source-file src="src/wp8/BarcodeScanner.cs"/>
+        <source-file src="src/wp8/CameraScan.xaml"/>
+        <source-file src="src/wp8/CameraScan.xaml.cs"/>
+    </platform>
+</plugin>
