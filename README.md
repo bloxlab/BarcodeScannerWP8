@@ -15,7 +15,7 @@ Installation
 ============
 
 Using CLI:
-* cordova plugin add org.bloxlab.barcodescanner
+* cordova plugin add org.bloxlab.barcodescanner (or org.bloxlab.barcodescanner with https://github.com/bloxlab/BarcodeScannerWP8.git)
 * cordova build wp8
 
 
