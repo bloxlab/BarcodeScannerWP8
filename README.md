@@ -11,6 +11,13 @@ Licence
 =======
 MIT
 
+Installation
+============
+
+Using CLI:
+1. cordova plugin add org.bloxlab.barcodescanner
+2. cordova build wp8
+
 Usage
 =====
 
