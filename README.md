@@ -9,7 +9,7 @@ Cordova/PhoneGap plugin to enable barcode scanning on Windows Phone 8 using the 
 
 Licence
 =======
-MIT
+None
 
 Installation
 ============
